@@ -1,16 +1,7 @@
 # xmlinflutter
 
-A new Flutter project.
+Flutter app that converts XML data into Flutter app [phase ONE]
 
-## Getting Started
+Show stats according to XML data ... WORKIN ON IT [phase TWO]
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app is just prototype of my bachelor's project. It is my app, my work, but you now what. AI is a good servant but bad master so I try to keep it that way. :D
