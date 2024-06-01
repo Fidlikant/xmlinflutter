@@ -18,9 +18,8 @@ class _FormScreenState extends State<FormScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('XML -> Form Data', 
-        style: TextStyle(color:  Color.fromARGB(255, 255, 255, 255))
-        ),
+        title: const Text('XML -> Form Data',
+            style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
         backgroundColor: const Color.fromARGB(255, 41, 166, 228),
       ),
       body: Padding(
@@ -35,7 +34,8 @@ class _FormScreenState extends State<FormScreen> {
                         children: [
                           TextFormField(
                             initialValue: (person as Person).name,
-                            decoration: const InputDecoration(labelText: 'Name'),
+                            decoration:
+                                const InputDecoration(labelText: 'Name'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
@@ -49,7 +49,8 @@ class _FormScreenState extends State<FormScreen> {
                           ),
                           TextFormField(
                             initialValue: person.email,
-                            decoration: const InputDecoration(labelText: 'Email'),
+                            decoration:
+                                const InputDecoration(labelText: 'Email'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
@@ -63,21 +64,24 @@ class _FormScreenState extends State<FormScreen> {
                         children: [
                           TextFormField(
                             initialValue: (book as Book).title,
-                            decoration: const InputDecoration(labelText: 'Title'),
+                            decoration:
+                                const InputDecoration(labelText: 'Title'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
                           ),
                           TextFormField(
                             initialValue: book.author,
-                            decoration: const InputDecoration(labelText: 'Author'),
+                            decoration:
+                                const InputDecoration(labelText: 'Author'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
                           ),
                           TextFormField(
                             initialValue: book.year,
-                            decoration: const InputDecoration(labelText: 'Year'),
+                            decoration:
+                                const InputDecoration(labelText: 'Year'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
@@ -91,15 +95,16 @@ class _FormScreenState extends State<FormScreen> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Stats()),
+                      MaterialPageRoute(
+                        builder: (context) => const Stats(),
+                      ),
                     );
                   },
-                  child: const Text('Analyse Data', 
-                    style: TextStyle(fontSize: 15,
-                     color: Color.fromARGB(255, 7, 115, 170)
-                     ),
-                  
-                ),
+                  child: const Text(
+                    'Analyse Data',
+                    style: TextStyle(
+                        fontSize: 15, color: Color.fromARGB(255, 7, 115, 170)),
+                  ),
                 ),
                 const SizedBox(height: 50),
                 Padding(
