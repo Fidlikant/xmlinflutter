@@ -4,9 +4,11 @@ import 'package:xml/xml.dart';
 import 'xmltodata.dart';
 import 'form.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

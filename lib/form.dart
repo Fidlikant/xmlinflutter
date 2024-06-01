@@ -91,7 +91,21 @@ class _FormScreenState extends State<FormScreen> {
                     }).toList() ??
                     [],
                 const SizedBox(height: 50),
-                ElevatedButton(
+                Container(
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(7.0),
+                  color: const Color.fromARGB(255, 41, 166, 228),),
+                  child: const Text('Click on the button below for processing data...',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold
+                          )),
+                  
+                  
+                ),
+                
+                const SizedBox(height: 50),
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -100,11 +114,8 @@ class _FormScreenState extends State<FormScreen> {
                       ),
                     );
                   },
-                  child: const Text(
-                    'Analyse Data',
-                    style: TextStyle(
-                        fontSize: 15, color: Color.fromARGB(255, 7, 115, 170)),
-                  ),
+                    backgroundColor: const Color.fromARGB(255, 41, 166, 228),
+                    child: const Icon(Icons.analytics_outlined),
                 ),
                 const SizedBox(height: 50),
                 Padding(
@@ -119,7 +130,7 @@ class _FormScreenState extends State<FormScreen> {
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: Column(
-                      children: <Widget>[
+                      children: [
                         Image.asset('assets/Flutter_logo.png'),
                         const Text('Powered by Flutter',
                             style: TextStyle(fontSize: 11)),

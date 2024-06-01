@@ -44,10 +44,10 @@ List<PieChartSectionData> showingSections() {
         value: 15,
         title: '15%',
         radius: 50,
-        titleStyle: TextStyle(
+        titleStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
-          color: const Color(0xffffffff),
+          color: Color(0xffffffff),
         ),
       ),
       PieChartSectionData(
@@ -55,10 +55,10 @@ List<PieChartSectionData> showingSections() {
         value: 30,
         title: '30%',
         radius: 50,
-        titleStyle: TextStyle(
+        titleStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
-          color: const Color(0xffffffff),
+          color: Color(0xffffffff),
         ),
       ),
       PieChartSectionData(
@@ -66,10 +66,10 @@ List<PieChartSectionData> showingSections() {
         value: 45,
         title: '45%',
         radius: 50,
-        titleStyle: TextStyle(
+        titleStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
-          color: const Color(0xffffffff),
+          color: Color(0xffffffff),
         ),
       ),
       PieChartSectionData(
@@ -77,10 +77,10 @@ List<PieChartSectionData> showingSections() {
         value: 10,
         title: '10%',
         radius: 50,
-        titleStyle: TextStyle(
+        titleStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
-          color: const Color(0xffffffff),
+          color: Color(0xffffffff),
         ),
       ),
     ];
