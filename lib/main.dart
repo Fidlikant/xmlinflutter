@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         future: loadFormData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Scaffold(
+            return const Scaffold(
               body: Center(child: CircularProgressIndicator()),
             );
           } else if (snapshot.hasError) {

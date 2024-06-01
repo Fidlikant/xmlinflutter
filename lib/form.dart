@@ -5,7 +5,7 @@ import 'xmltodata.dart';
 class FormScreen extends StatefulWidget {
   final Map<String, List<dynamic>> formData;
 
-  FormScreen({required this.formData});
+  const FormScreen({super.key, required this.formData});
 
   @override
   _FormScreenState createState() => _FormScreenState();
@@ -18,7 +18,9 @@ class _FormScreenState extends State<FormScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('XML -> Form Data'),
+        title: const Text('XML -> Form Data', 
+        style: TextStyle(color:  Color.fromARGB(255, 255, 255, 255))
+        ),
         backgroundColor: const Color.fromARGB(255, 41, 166, 228),
       ),
       body: Padding(
@@ -33,21 +35,21 @@ class _FormScreenState extends State<FormScreen> {
                         children: [
                           TextFormField(
                             initialValue: (person as Person).name,
-                            decoration: InputDecoration(labelText: 'Name'),
+                            decoration: const InputDecoration(labelText: 'Name'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
                           ),
                           TextFormField(
                             initialValue: person.age,
-                            decoration: InputDecoration(labelText: 'Age'),
+                            decoration: const InputDecoration(labelText: 'Age'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
                           ),
                           TextFormField(
                             initialValue: person.email,
-                            decoration: InputDecoration(labelText: 'Email'),
+                            decoration: const InputDecoration(labelText: 'Email'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
@@ -61,21 +63,21 @@ class _FormScreenState extends State<FormScreen> {
                         children: [
                           TextFormField(
                             initialValue: (book as Book).title,
-                            decoration: InputDecoration(labelText: 'Title'),
+                            decoration: const InputDecoration(labelText: 'Title'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
                           ),
                           TextFormField(
                             initialValue: book.author,
-                            decoration: InputDecoration(labelText: 'Author'),
+                            decoration: const InputDecoration(labelText: 'Author'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
                           ),
                           TextFormField(
                             initialValue: book.year,
-                            decoration: InputDecoration(labelText: 'Year'),
+                            decoration: const InputDecoration(labelText: 'Year'),
                             onSaved: (value) {
                               // Save the value if needed
                             },
@@ -84,7 +86,7 @@ class _FormScreenState extends State<FormScreen> {
                       );
                     }).toList() ??
                     [],
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -92,15 +94,20 @@ class _FormScreenState extends State<FormScreen> {
                       MaterialPageRoute(builder: (context) => Stats()),
                     );
                   },
-                  child: Text('Analyse Data'),
+                  child: const Text('Analyse Data', 
+                    style: TextStyle(fontSize: 15,
+                     color: Color.fromARGB(255, 7, 115, 170)
+                     ),
+                  
                 ),
-                SizedBox(height: 50),
+                ),
+                const SizedBox(height: 50),
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Container(
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color: Color.fromARGB(
+                        color: const Color.fromARGB(
                             255, 41, 166, 228), // Set the border color
                         width: 3.0,
                       ),
@@ -109,7 +116,7 @@ class _FormScreenState extends State<FormScreen> {
                     child: Column(
                       children: <Widget>[
                         Image.asset('assets/Flutter_logo.png'),
-                        Text('Powered by Flutter',
+                        const Text('Powered by Flutter',
                             style: TextStyle(fontSize: 11)),
                       ],
                     ),
